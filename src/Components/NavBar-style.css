@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Gilroy';
+}
+
+.conainter-content-header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+}
+
+.menu-list ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-name h3{
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(187, 27, 27);
+}
+
+.menu-list ul li{
+	list-style-type: none;
+	/* padding: 2rem; */
+	margin-left: 3rem;
+}
+
+.menu-list ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 1rem;
+}
+
+.menu-list ul li a:hover{
+	border-bottom: 2px rgb(187, 27, 27) solid;
+}
+
+.menu-button .button{
+	padding: 0.8rem;
+	font-family: 'Gilroy';
+	font-weight: bold;
+	background-color: rgb(187, 27, 27);
+	border: none;
+	color: white;
+	border-radius: 8px;
+}

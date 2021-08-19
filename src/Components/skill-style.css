@@ -1,0 +1,54 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Gilroy';
+}
+
+.container-content-skill .line{
+	width: 20%;
+	height: 5px;
+	background-color: rgb(187, 27, 27);
+}
+
+.container-content-skill .skill-title{
+	padding: 1rem;
+}
+
+.container-content-skill .skill-title h1{
+	color: rgb(187, 27, 27);
+	padding: 1rem;
+	font-size: 2rem;
+	font-family: 'Gilroy';
+	font-weight: bold;
+} 
+
+.container-content-skill .skill-boxes{
+	/* width: 100%; */
+	height: auto;
+	padding: 0 5rem 5rem 5rem;
+	display: flex;
+	justify-content: space-between;
+	/* flex-direction: row;
+	flex-wrap: wrap; */
+}
+
+.container-content-skill .skill-info{
+	width: 100%;
+	margin: 0 2rem 2rem 2rem;
+} 
+
+.skill-detail-name .categories{
+	font-family: 'Gilroy';
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-decoration: underline;
+}
+
+.skill-detail-info h3{
+	font-family: 'Gilroy';
+	font-weight: bold;
+	font-size: 1rem;
+}

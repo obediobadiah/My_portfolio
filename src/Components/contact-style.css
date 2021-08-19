@@ -1,0 +1,24 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Gilroy';
+}
+
+.container-content-contact .contact-title{
+	padding: 1rem;
+}
+
+.contact-title h1{
+	color: rgb(187, 27, 27);
+	padding: 1rem;
+	font-size: 2rem;
+	font-family: 'Gilroy';
+	font-weight: bold;
+}
+
+.container-content-contact{
+	background-color: rgb(66, 66, 66);
+}

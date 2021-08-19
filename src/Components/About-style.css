@@ -1,0 +1,29 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Gilroy';
+}
+
+.container-content-About {
+	background-color: rgb(229, 229, 229);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5% 10rem 0 10rem;
+}
+
+.container-content-About .about-text{
+	padding: 5rem;
+}
+
+.container-content-About .about-text h1{
+	padding: 1rem 1rem 0 0;
+	color: rgb(187, 27, 27);
+}
+
+.container-content-About .about-text p{
+	padding: 1rem 0 0 0;
+}
