@@ -3,6 +3,7 @@ import './NavBar-style.css';
 import { Link } from 'react-scroll';
 import myimage from './images/I4G-Logo-Color-Cropped.png';
 
+
 function Navbar() {
   return (
     <div className="Container">
