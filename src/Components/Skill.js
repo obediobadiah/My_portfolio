@@ -8,7 +8,7 @@ function Skill() {
 	
   return (
 	  
-    <div className="Container">
+    <div className="skills">
 		<div className="container-skill-content">
 			<div className="container-content-skill">
 				<div className="line"></div>

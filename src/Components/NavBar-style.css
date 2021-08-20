@@ -7,14 +7,16 @@ body{
 	font-family: 'Gilroy';
 }
 
+
 .conainter-content-header{
+	box-shadow: 0 0 0 #7777;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 1rem;
 }
 
-.menu-list ul{
+.menu-list{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -25,20 +27,21 @@ body{
 	color: rgb(187, 27, 27);
 }
 
-.menu-list ul li{
+/* .menu-list ul li{
 	list-style-type: none;
-	/* padding: 2rem; */
-	margin-left: 3rem;
-}
+	padding: 2rem;
+	
+} */
 
-.menu-list ul li a{
+.menu-list spam{
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
 	padding: 1rem;
+	margin-left: 3rem;
 }
 
-.menu-list ul li a:hover{
+.menu-list spam:hover{
 	border-bottom: 2px rgb(187, 27, 27) solid;
 }
 

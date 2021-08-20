@@ -12,8 +12,9 @@ body{
 }
 
 .contact-title h1{
-	color: rgb(187, 27, 27);
+	color: white;
 	padding: 1rem;
+	text-align: center;
 	font-size: 2rem;
 	font-family: 'Gilroy';
 	font-weight: bold;
@@ -21,4 +22,31 @@ body{
 
 .container-content-contact{
 	background-color: rgb(66, 66, 66);
+	width: auto;
+	height: 300px;
 }
+
+.contact-boxes p{
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+
+.contact-boxes{
+	display: flex;
+	justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+	.contact-boxes{
+		display: block;
+	}
+	.contact-boxes p{
+		text-align: center;
+		color: white;
+		padding: 10px;
+	}
+	.container-content-contact{
+		height: 400px;
+	}
+};

@@ -52,3 +52,25 @@ body{
 	font-weight: bold;
 	font-size: 1rem;
 }
+
+@media only screen and (max-width: 1000px) {
+	
+.container-content-skill .skill-boxes{
+	/* width: 100%; */
+	height: auto;
+	padding: 0 5rem 5rem 1rem;
+	display: block;
+	/* justify-content: space-between; */
+	/* flex-direction: row;
+	flex-wrap: wrap; */
+	}
+
+	.container-content-About .about-text{
+		padding: 1rem;
+	}
+
+	.container-content-skill .skill-info{
+		width: 100%;
+		margin: 0 2rem 2rem 1rem;
+	} 
+};

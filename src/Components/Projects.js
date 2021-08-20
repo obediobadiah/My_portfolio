@@ -6,7 +6,7 @@ function Projects() {
 	
   return (
 	  
-    <div className="Container">
+    <div className="projects">
 		<div className="container-projects-content">
 			<div className="container-content-projects">
 				<div className="line"></div>
