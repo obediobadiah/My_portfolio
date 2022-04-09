@@ -1,5 +1,5 @@
 {
-  "name": "zuri-internship-stage2",
+  "name": "my_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.3",
+    "react-typical": "^0.1.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
