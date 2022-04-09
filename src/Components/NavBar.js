@@ -1,7 +1,6 @@
 import React from 'react';
 import './NavBar-style.css';
 import { Link } from 'react-scroll';
-import myimage from './images/I4G-Logo-Color-Cropped.png';
 
 
 function Navbar() {
@@ -9,9 +8,6 @@ function Navbar() {
     <div className="Container">
 		<div className="container-content">
 			<div className="conainter-content-header">
-				<div className="header-name">
-					<img src={myimage} alt="Myimage" className="myimage" height="50px" width="180px"/>
-				</div>
 				<div className="menu-list">
 					<Link
 					activeClass="active"

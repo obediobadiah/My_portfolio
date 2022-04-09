@@ -11,7 +11,6 @@ import { BackTop } from 'antd';
 function Home() {
   return (
     <div className="Container">
-		<NavBar />
 		<IntroSection />
 		<About />
 		<Skill />
