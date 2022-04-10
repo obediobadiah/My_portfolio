@@ -9,9 +9,8 @@ function Projects() {
     <div className="projects">
 		<div className="container-projects-content">
 			<div className="container-content-projects">
-				<div className="line"></div>
 				<div className="projects-title">
-					<h1>Personal Projects</h1>
+					<h1>Recent Projects</h1>
 				</div>
 				<div className="projects-boxes">
 					<div className="project-box">

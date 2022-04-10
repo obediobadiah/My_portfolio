@@ -2,7 +2,8 @@ import React from 'react';
 import NavBar from './NavBar'
 import IntroSection from './Intro-section'
 import About from './About'
-import Skill from './Skill'
+import Experience from './Experience'
+import Skills from './Skill'
 import Projects from './Projects'
 import Contacts from './Contacts'
 import 'antd/dist/antd.css';
@@ -12,8 +13,9 @@ function Home() {
   return (
     <div className="Container">
 		<IntroSection />
-		<About />
-		<Skill />
+		 <About />
+		<Experience />
+		<Skills />
 		<Projects />
 		<Contacts />
 		<BackTop />

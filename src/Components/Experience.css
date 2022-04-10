@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Kanit', sans-serif;
+}
+
+.experience_content{
+    height: auto;
+	padding: 0 8rem 8rem 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience_title{
+    color: rgb(187, 27, 27);
+	font-family: 'Kanit', sans-serif;
+	font-weight: bold;
+    font-size: 2rem;
+    padding: 0 3rem 3rem 0;
+}
+
+.educations_title{
+    color: rgb(187, 27, 27);
+	font-family: 'Kanit', sans-serif;
+	font-weight: bold;
+    font-size: 2rem;
+    padding: 3rem 3rem 3rem 0;
+}
+
+.experience_title{
+    color: rgb(187, 27, 27);
+	font-family: 'Kanit', sans-serif;
+	font-weight: bold;
+    font-size: 2rem;
+    padding: 3rem 3rem 3rem 0;
+}
+
+.experience_details .experience_card{
+    padding: 20px;
+    margin-top: 20px;
+    /* margin-left: 50px; */
+    border-top: 2px solid rgb(187, 27, 27);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.experience_details .experience_card h5{
+    color: rgb(166, 166, 166);
+}
+
+.experience_details .experience_card p{
+    color: rgb(187, 27, 27);
+}
+
+.educations_details .education_card{
+    padding: 20px;
+    margin-top: 20px;
+    /* margin-left: 50px; */
+    border-top: 2px solid rgb(187, 27, 27);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.educations_details .education_card h5{
+    color: rgb(166, 166, 166);
+}
+
+.educations_details .education_card p{
+    color: rgb(187, 27, 27);
+}

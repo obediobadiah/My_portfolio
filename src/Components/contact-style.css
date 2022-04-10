@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 }
 
 .container-content-contact .contact-title{
@@ -16,7 +16,7 @@ body{
 	padding: 1rem;
 	text-align: center;
 	font-size: 2rem;
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 }
 

@@ -1,28 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap');
+
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-}
-body{
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 }
 
 .container-content-About {
-	background-color: rgb(229, 229, 229);
-	display: flex;
+	margin-top: 5rem;
+	background-color: rgb(241, 241, 241);
 	justify-content: space-between;
 	align-items: center;
-	padding: 5% 10rem 0 10rem;
+	padding: 10rem 20rem 10rem 20rem;
 }
 
-.container-content-About .about-text{
-	padding: 5rem;
+.about-contacts{
+	display: flex;
+	margin-left: -30px;
+	margin-top: 30px;
+}
+
+.about-contacts .about_icons{
+	display: flex;
+	margin-left: 30px;
+	color: rgb(129, 129, 129);
+	align-items: center;
+}
+
+.about-contacts .about_icons .about_icons_txt{
+	margin-left: 10px;
+	font-style: italic;
 }
 
 .container-content-About .about-text h1{
-	padding: 1rem 1rem 0 0;
 	color: rgb(187, 27, 27);
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 }
 

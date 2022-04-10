@@ -4,13 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-	font-family: 'Gilroy';
-}
-
-.container-content-projects .line{
-	width: 20%;
-	height: 5px;
-	background-color: rgb(187, 27, 27);
+	font-family: 'Kanit', sans-serif;
 }
 
 .container-content-projects .projects-title{
@@ -21,19 +15,20 @@ body{
 	color: rgb(187, 27, 27);
 	padding: 1rem;
 	font-size: 2rem;
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
+	text-align: center;
 } 
 
 .projects-details h2{
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 	font-size: 1.3rem;
 }
 
 .projects-details button{
 	background-color: rgb(197, 124, 124);
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 	padding: 5px;
 	color: white;
 	border: none;
@@ -42,13 +37,11 @@ body{
 }
 
 .container-content-projects .projects-boxes{
-	/* width: 100%; */
-	height: auto;
 	padding: 0 5rem 5rem 5rem;
-	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
-	/* flex-wrap: wrap; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 15px;
+	padding: 0;
 }
 
 .projects-boxes .projects-details{
@@ -56,7 +49,13 @@ body{
 	border: 1px solid rgb(112, 112, 112);
 	border-left: 5px solid rgb(197, 124, 124);
 	border-radius: 5px;
-	margin: 1rem;
+	width: 100%;
+	height: 200px;
+	margin-top: 1rem;
+}
+
+.projects-boxes{
+	padding: 1rem 2rem 1rem 2rem;
 }
 
 @media only screen and (max-width: 1000px) {

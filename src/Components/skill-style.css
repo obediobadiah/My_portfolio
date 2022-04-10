@@ -1,34 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap');
+
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-}
-body{
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 }
 
-.container-content-skill .line{
-	width: 20%;
-	height: 5px;
-	background-color: rgb(187, 27, 27);
+
+body{
+	font-family: 'Kanit', sans-serif;
 }
 
 .container-content-skill .skill-title{
 	padding: 1rem;
 }
 
+.container-content-skill{
+	background-color: rgb(255, 200, 200);
+	padding: 5rem;
+}
+
 .container-content-skill .skill-title h1{
 	color: rgb(187, 27, 27);
-	padding: 1rem;
 	font-size: 2rem;
-	font-family: 'Gilroy';
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 } 
 
 .container-content-skill .skill-boxes{
 	/* width: 100%; */
 	height: auto;
-	padding: 0 5rem 5rem 5rem;
+	padding: 0 1rem 1rem 1rem;
 	display: flex;
 	justify-content: space-between;
 	/* flex-direction: row;
@@ -37,20 +41,27 @@ body{
 
 .container-content-skill .skill-info{
 	width: 100%;
-	margin: 0 2rem 2rem 2rem;
+	margin: 0 1rem 1rem 1rem;
 } 
 
 .skill-detail-name .categories{
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 	font-size: 1.3rem;
 	text-decoration: underline;
 }
 
 .skill-detail-info h3{
-	font-family: 'Gilroy';
+	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 	font-size: 1rem;
+}
+
+.skill-details{
+	border-left: 1px solid rgb(186, 186, 186);
+	width: 100%;
+	height: 300px;
+	padding: 2rem 2rem 2rem 2rem;
 }
 
 @media only screen and (max-width: 1000px) {

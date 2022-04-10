@@ -11,7 +11,6 @@ function Skill() {
     <div className="skills">
 		<div className="container-skill-content">
 			<div className="container-content-skill">
-				<div className="line"></div>
 				<div className="skill-title">
 					<h1>Skills</h1>
 				</div>
