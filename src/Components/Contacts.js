@@ -1,5 +1,9 @@
 import React from 'react';
 import './contact-style.css';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 
 function Contact() {
@@ -10,13 +14,21 @@ function Contact() {
 		<div className="container-contact-content">
 			<div className="container-content-contact">
 				<div className="line"></div>
-				<div className="contact-title">
-					<h1>My Contacts</h1>
-				</div>
 				<div className="contact-boxes">
-					<p>Location: DRCongo</p>
-					<p>Email: obediobadiah05@gmail.com</p>
-					<p>Phone: +243 993290900</p>
+					<div className='about_me'>
+						<h2>About me</h2>
+						<p>A Fullstack software developer who enjoys solving problems and building products. I have worked with many companies where I was able to add values to the organization through my expertise and skills.</p>
+						<p>Copyright ©2022 All right reserve</p>
+					</div>
+					<div className='about_me'>
+						<h2>Follow me</h2>
+						<div className='Intro_icons'>
+						<a href='https://web.facebook.com/obedi.amos'><FacebookIcon fontSize="large"/></a>
+						<a href='https://twitter.com/obedi_obadiah'><TwitterIcon fontSize="large"/></a>
+						<a href='https://github.com/obediobadiah'><GitHubIcon fontSize="large"/></a>
+						<a href='https://www.linkedin.com/in/obedi-obadiah-6a11a419a/'><LinkedInIcon fontSize="large"/></a>
+					</div>
+					</div>
 				</div>	
 			</div>
 		</div>

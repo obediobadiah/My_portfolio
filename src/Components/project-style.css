@@ -7,6 +7,10 @@ body{
 	font-family: 'Kanit', sans-serif;
 }
 
+.container-content-projects{
+	margin-top: 2rem;
+}
+
 .container-content-projects .projects-title{
 	padding: 1rem;
 }
@@ -27,7 +31,7 @@ body{
 }
 
 .projects-details button{
-	background-color: rgb(197, 124, 124);
+	background-color: rgb(187, 27, 27);
 	font-family: 'Kanit', sans-serif;
 	padding: 5px;
 	color: white;
@@ -37,11 +41,10 @@ body{
 }
 
 .container-content-projects .projects-boxes{
-	padding: 0 5rem 5rem 5rem;
+	padding: 0 3rem 3rem 3rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	gap: 15px;
-	padding: 0;
 }
 
 .projects-boxes .projects-details{
@@ -50,12 +53,47 @@ body{
 	border-left: 5px solid rgb(197, 124, 124);
 	border-radius: 5px;
 	width: 100%;
-	height: 200px;
+	/* height: 200px; */
 	margin-top: 1rem;
 }
 
-.projects-boxes{
-	padding: 1rem 2rem 1rem 2rem;
+.projects-boxes .projects-details:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project_skills ul{
+	display: flex;
+	margin-left: -5px;
+}
+
+.project_skills ul li{
+	list-style-type: none;
+	margin-left: 5px;
+	font-size: 0.5rem;
+	color: white;
+	background-color: rgb(197, 124, 124);
+	padding: 5px;
+	border-radius: 20px;
+}
+
+.project_title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.project_title a{
+	color: white;
+	background-color: rgb(187, 27, 27);
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.project_title a:hover{
+	background-color: rgb(103, 7, 7);
 }
 
 @media only screen and (max-width: 1000px) {
