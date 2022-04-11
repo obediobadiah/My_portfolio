@@ -1,57 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap');
 
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 	font-family: 'Kanit', sans-serif;
 }
 
-.container-content-About {
+.container-about-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 15px;
 	margin-top: 5rem;
 	background-color: rgb(241, 241, 241);
 	justify-content: space-between;
 	align-items: center;
-	padding: 10rem 20rem 10rem 20rem;
+	padding: 10rem 10rem 10rem 10rem;
 }
 
-.about-contacts{
+.about_image {
+	padding: 10px;
+}
+
+.about_image img {
+	width: 500px;
+	height: auto;
+	border-radius: 50%;
+	border: 20px solid white;
+	transition: 0.5s all ease-in-out
+}
+
+.about_image img:hover {
+	transform: scale(0.9)
+}
+
+.about-contacts {
 	display: flex;
 	margin-left: -30px;
 	margin-top: 30px;
 }
 
-.about-contacts .about_icons{
+.about-contacts .about_icons {
 	display: flex;
 	margin-left: 30px;
 	color: rgb(129, 129, 129);
 	align-items: center;
 }
 
-.about-contacts .about_icons .about_icons_txt{
+.about-contacts .about_icons .about_icons_txt {
 	margin-left: 10px;
 	font-style: italic;
 }
 
-.container-content-About .about-text h1{
+.container-content-About .about-text h1 {
 	color: rgb(187, 27, 27);
 	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 }
 
-.container-content-About .about-text p{
+.container-content-About .about-text p {
 	padding: 1rem 0 0 0;
 }
 
-@media only screen and (max-width: 1000px) {
-	.container-content-About {
-		display: block;
-		width: 100%;
-		height: auto;
-		padding: 10px 10px 10px 10px;
+@media only screen and (max-width: 992px) {
+
+	.container-about-content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 15px;
+		margin-top: 5rem;
+		background-color: rgb(241, 241, 241);
 		justify-content: space-between;
+		align-items: center;
+		padding: 5rem 1rem 5rem 1rem;
+		width: 100;
+		height: auto;
 	}
-	.container-content-About .about-text{
+
+	.container-content-About .about-text {
 		padding: 1rem;
 	}
-};
+
+	
+.about-contacts {
+	display: block;
+	margin-left: -20px;
+	margin-top: 30px;
+}
+
+.about_image img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	border: 20px solid white;
+	transition: 0.5s all ease-in-out
+}
+}
+
+;

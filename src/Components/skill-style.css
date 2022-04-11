@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap');
 
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -8,28 +8,28 @@
 }
 
 
-body{
+body {
 	font-family: 'Kanit', sans-serif;
 }
 
-.container-content-skill .skill-title{
+.container-content-skill .skill-title {
 	padding: 1rem;
 }
 
-.container-content-skill{
+.container-content-skill {
 	background-color: rgb(255, 200, 200);
 	padding: 5rem;
 }
 
-.container-content-skill .skill-title h1{
+.container-content-skill .skill-title h1 {
 	color: rgb(187, 27, 27);
 	font-size: 2rem;
 	text-align: center;
 	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
-} 
+}
 
-.container-content-skill .skill-boxes{
+.container-content-skill .skill-boxes {
 	/* width: 100%; */
 	height: auto;
 	padding: 0 1rem 1rem 1rem;
@@ -39,49 +39,56 @@ body{
 	flex-wrap: wrap; */
 }
 
-.container-content-skill .skill-info{
+.container-content-skill .skill-info {
 	width: 100%;
 	margin: 0 1rem 1rem 1rem;
-} 
+}
 
-.skill-detail-name .categories{
+.skill-detail-name .categories {
 	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 	font-size: 1.3rem;
 	text-decoration: underline;
 }
 
-.skill-detail-info h3{
+.skill-detail-info h3 {
 	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 	font-size: 1rem;
 }
 
-.skill-details{
+.skill-details {
 	border-left: 1px solid rgb(186, 186, 186);
 	width: 100%;
 	height: 300px;
 	padding: 2rem 2rem 2rem 2rem;
 }
 
-@media only screen and (max-width: 1000px) {
-	
-.container-content-skill .skill-boxes{
-	/* width: 100%; */
-	height: auto;
-	padding: 0 5rem 5rem 1rem;
-	display: block;
-	/* justify-content: space-between; */
-	/* flex-direction: row;
-	flex-wrap: wrap; */
+@media only screen and (max-width: 992px) {
+
+	.container-content-skill .skill-boxes {
+		height: auto;
+		padding: 0;
+		display: block;
 	}
 
-	.container-content-About .about-text{
-		padding: 1rem;
+
+	.container-content-skill {
+		background-color: rgb(255, 200, 200);
+		padding: 5rem 0 5rem 0;
 	}
 
-	.container-content-skill .skill-info{
+	.container-content-skill .skill-info {
 		width: 100%;
-		margin: 0 2rem 2rem 1rem;
-	} 
-};
+		margin: 0;
+	}
+
+	.skill-details {
+		border-left: 1px solid rgb(186, 186, 186);
+		width: 100%;
+		height: 300px;
+		padding: 2rem 1rem 2rem 1rem;
+	}
+}
+
+;

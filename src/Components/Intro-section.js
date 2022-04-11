@@ -19,11 +19,11 @@ function Intro() {
 								loop={Infinity}
 								wrapper='b'
 								steps={[
-									' Frontend Web developer',
+									' Frontend Web developer💻',
 									1000,
-									' BackEnd Web developer',
+									' BackEnd Web developer💻',
 									1000,
-									' UI/UX Web designer',
+									' UI/UX Web designer💻',
 								]} />
 						</p>
 					</div>
@@ -31,14 +31,14 @@ function Intro() {
 						<img src={myimage} alt="Myimage" className="myimage" height="500px" width="400px" />
 					</div>
 					<div className='Intro_icons'>
-						<a href='https://web.facebook.com/obedi.amos'><FacebookIcon fontSize="large"/></a>
-						<a href='https://twitter.com/obedi_obadiah'><TwitterIcon fontSize="large"/></a>
-						<a href='https://github.com/obediobadiah'><GitHubIcon fontSize="large"/></a>
-						<a href='https://www.linkedin.com/in/obedi-obadiah-6a11a419a/'><LinkedInIcon fontSize="large"/></a>
+						<a href='https://web.facebook.com/obedi.amos'><FacebookIcon fontSize="large" /></a>
+						<a href='https://twitter.com/obedi_obadiah'><TwitterIcon fontSize="large" /></a>
+						<a href='https://github.com/obediobadiah'><GitHubIcon fontSize="large" /></a>
+						<a href='https://www.linkedin.com/in/obedi-obadiah-6a11a419a/'><LinkedInIcon fontSize="large" /></a>
 					</div>
 					<div className='Intro_button'>
 						<div><a href='https://docs.google.com/document/d/11JWhG39yumaWQzKuC3O2V-XDb_8HoVg4k9ma8c5RZHk/edit' className='cv_button'>Download CV</a></div>
-						
+
 					</div>
 				</div>
 			</div>

@@ -96,11 +96,10 @@ body{
 	background-color: rgb(103, 7, 7);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
 	.container-content-projects .projects-boxes{
 		height: auto;
-		padding: 0 1rem 1rem 1rem;
-		display: block;
+		padding: 0 1rem 1rem 0rem;
 	}
 
 	.projects-boxes .projects-details{

@@ -1,44 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap');
 
-*{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	font-family: 'Kanit', sans-serif;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
 }
 
-.experience_content{
+.experience_content {
     height: auto;
-	padding: 0 8rem 8rem 8rem;
+    padding: 0 8rem 8rem 8rem;
     display: flex;
     justify-content: space-between;
 }
 
-.experience_title{
+.experience_title {
     color: rgb(187, 27, 27);
-	font-family: 'Kanit', sans-serif;
-	font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
     font-size: 2rem;
     padding: 0 3rem 3rem 0;
 }
 
-.educations_title{
+.educations_title {
     color: rgb(187, 27, 27);
-	font-family: 'Kanit', sans-serif;
-	font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
     font-size: 2rem;
     padding: 3rem 3rem 3rem 0;
 }
 
-.experience_title{
+.experience_title {
     color: rgb(187, 27, 27);
-	font-family: 'Kanit', sans-serif;
-	font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
     font-size: 2rem;
     padding: 3rem 3rem 3rem 0;
 }
 
-.experience_details .experience_card{
+.experience_details .experience_card {
     padding: 20px;
     margin-top: 20px;
     /* margin-left: 50px; */
@@ -47,15 +47,15 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.experience_details .experience_card h5{
+.experience_details .experience_card h5 {
     color: rgb(166, 166, 166);
 }
 
-.experience_details .experience_card p{
+.experience_details .experience_card p {
     color: rgb(187, 27, 27);
 }
 
-.educations_details .education_card{
+.educations_details .education_card {
     padding: 20px;
     margin-top: 20px;
     /* margin-left: 50px; */
@@ -64,10 +64,20 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.educations_details .education_card h5{
+.educations_details .education_card h5 {
     color: rgb(166, 166, 166);
 }
 
-.educations_details .education_card p{
+.educations_details .education_card p {
     color: rgb(187, 27, 27);
+}
+
+@media only screen and (max-width: 992px) {
+
+    .experience_content {
+        height: auto;
+        padding: 0 1rem 1rem 1rem;
+        display: block;
+        justify-content: space-between;
+    }
 }

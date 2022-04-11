@@ -11,42 +11,76 @@ body{
 	padding: 1rem;
 }
 
-.contact-title h1{
+.about_me h2{
 	color: white;
-	padding: 1rem;
-	text-align: center;
+	padding: 1rem 1rem 1rem 0;
+	font-size: 2rem;
+	font-family: 'Kanit', sans-serif;
+	font-weight: bold;
+	
+}
+
+.about_me p{
+	color: gray;
+}
+
+.about_links{
+	margin-left: 400px;
+}
+
+.about_links h2{
+	color: white;
+	padding: 1rem 1rem 1rem 0;
 	font-size: 2rem;
 	font-family: 'Kanit', sans-serif;
 	font-weight: bold;
 }
 
 .container-content-contact{
-	background-color: rgb(66, 66, 66);
+	background-color: black;
 	width: auto;
-	height: 300px;
+	height: auto;
+	padding: 100px;
 }
 
 .contact-boxes p{
-	text-align: center;
-	color: white;
 	padding: 10px;
 }
 
-.contact-boxes{
-	display: flex;
-	justify-content: space-around;
+.contact_icons{
+	color: rgb(203, 203, 203);
+	font-size: 2rem;
+	margin-left: -20px;
 }
 
-@media only screen and (max-width: 1000px) {
-	.contact-boxes{
-		display: block;
-	}
-	.contact-boxes p{
-		text-align: center;
-		color: white;
-		padding: 10px;
-	}
+.contact_icons a{
+	margin-left: 20px;
+	text-decoration: none;
+	color: gray;
+	
+}
+
+.contact_icons a:hover{
+	color: rgb(203, 203, 203);
+}
+
+.contact-boxes{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+
 	.container-content-contact{
-		height: 400px;
+		background-color: black;
+		width: auto;
+		height: auto;
+		padding: 100px 10px 100px 10px;
 	}
+
+	
+.about_links{
+	margin-left: 10px;
+}
 };

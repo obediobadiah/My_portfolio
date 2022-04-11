@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap');
 
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -13,18 +13,18 @@
 	height: auto;
 }
 
-.intro-text{
+.intro-text {
 	color: white;
-    padding: 4rem;
+	padding: 4rem;
 	width: 100%;
 	text-align: center;
 	height: 500px;
 	background-color: rgb(187, 27, 27);
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
 }
 
-.intro-text .intro_name{
+.intro-text .intro_name {
 	text-transform: uppercase;
 	color: white;
 	margin: 0;
@@ -32,18 +32,18 @@
 	font-size: 5rem;
 }
 
-.intro-text p{
+.intro-text p {
 	padding-top: 0px;
 	font-size: 1.5rem;
 }
 
-.intro-image{
+.intro-image {
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
 
-.myimage{
+.myimage {
 	background-color: white;
 	position: relative;
 	margin-top: -200px;
@@ -51,21 +51,21 @@
 	border: 1px solid rgb(187, 27, 27);
 }
 
-.intro-text h1{
-    font-weight: bold;
+.intro-text h1 {
+	font-weight: bold;
 	font-size: 3rem;
 }
 
 
-.intro-text h1 spam{
+.intro-text h1 spam {
 	color: rgb(187, 27, 27);
 }
 
-.intro-text p{
+.intro-text p {
 	padding: 1rem 0 0 0;
 }
 
-.Intro_icons{
+.Intro_icons {
 	color: rgb(203, 203, 203);
 	font-size: 2rem;
 	display: flex;
@@ -75,23 +75,23 @@
 	padding: 30px;
 }
 
-.Intro_icons a{
+.Intro_icons a {
 	margin-left: 20px;
 	text-decoration: none;
 	color: rgb(203, 203, 203);
 }
 
-.Intro_icons a:hover{
+.Intro_icons a:hover {
 	color: black;
 }
 
-.Intro_button{
+.Intro_button {
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
 
-.Intro_button a{
+.Intro_button a {
 	text-decoration: none;
 	border: 1px solid rgb(187, 27, 27);
 	color: rgb(101, 101, 101);
@@ -100,24 +100,67 @@
 	margin-bottom: 2rem;
 }
 
-.Intro_button a:hover{
+.Intro_button a:hover {
 	background-color: rgb(187, 27, 27);
 	color: white;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
 	.container-content-intro {
-		display: block;
 		width: 100%;
 		height: auto;
-		padding: 0 2rem 0 2rem;
+		padding: 10px 10px 0 10px;
 		justify-content: space-between;
 	}
-	.intro-text{
-    	justify-content: center;
+
+	.intro-text {
+		color: white;
+		padding: 1rem;
+		width: 100%;
+		text-align: center;
+		height: 500px;
+		background-color: rgb(187, 27, 27);
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
 	}
 
-	.intro-image{
-		display: none;
+
+	.myimage {
+		background-color: white;
+		position: none;
+		margin-top: -200px;
+		width: 100%;
+		height: auto;
+		border-radius: 20px;
+		border: 1px solid rgb(187, 27, 27);
 	}
-};
+
+
+	.intro-image {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		padding: 30px
+	}
+
+	.intro-text .intro_name {
+		text-transform: uppercase;
+		color: white;
+		margin-top: 50px;
+		padding: 10px;
+		font-weight: bold;
+		text-align: left;
+		font-size: 3rem;
+		line-height: 1.5
+	}
+
+
+	.intro-text p {
+		padding: 10px;
+		padding-top: 0px;
+		font-size: 1rem;
+		text-align: left
+	}
+}
+
+;
