@@ -75,6 +75,26 @@ function Projects() {
 						</div>
 
 
+						<div className="project-box">
+							<div className="projects-info">
+								<div className="projects-details">
+									<div className='project_title'>
+										<h2>Small Bank Customers Management System</h2>
+										<a href="https://github.com/obediobadiah/SmallBankManagementSystem"><VisibilityIcon/></a>
+									</div>
+									<p>A desktop system to manage bank customers informations</p>
+									<div className='project_skills'>
+										<ul>
+											<li>CSharp</li>
+											<li>SQLServer</li>
+											<li>Twilio</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
 
 					</div>
 				</div>
