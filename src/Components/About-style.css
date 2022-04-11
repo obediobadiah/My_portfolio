@@ -20,6 +20,9 @@
 
 .about_image {
 	padding: 10px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
 }
 
 .about_image img {
@@ -95,6 +98,39 @@
 	border: 20px solid white;
 	transition: 0.5s all ease-in-out
 }
+};
+
+@media only screen and (max-width: 1024px) {
+
+	.container-about-content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 15px;
+		margin-top: 5rem;
+		background-color: rgb(241, 241, 241);
+		justify-content: space-between;
+		align-items: center;
+		padding: 5rem 1rem 5rem 1rem;
+		width: 100;
+		height: auto;
+	}
+
+	.container-content-About .about-text {
+		padding: 1rem;
+	}
+
+	
+.about-contacts {
+	display: block;
+	margin-left: -20px;
+	margin-top: 30px;
 }
 
-;
+.about_image img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	border: 20px solid white;
+	transition: 0.5s all ease-in-out
+}
+};

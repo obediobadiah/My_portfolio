@@ -29,6 +29,8 @@ function Skill() {
 								<Progress percent={60} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
 								<h3>JQuery</h3>
 								<Progress percent={60} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
+								<h3>AngularJS</h3>
+								<Progress percent={50} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
 							</div>
 						</div>
 					</div>
@@ -44,6 +46,10 @@ function Skill() {
 								<Progress percent={50} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
 								<h3>Python</h3>
 								<Progress percent={60} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
+								<h3>DjangoREST</h3>
+								<Progress percent={70} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
+								<h3>Laravel</h3>
+								<Progress percent={70} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
 							</div>
 						</div>
 					</div>
@@ -78,6 +84,25 @@ function Skill() {
 								<Progress percent={80} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
 								<h3>Java</h3>
 								<Progress percent={70} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
+							</div>
+						</div>
+					</div>
+					<div className="skill-info">
+						<div className="skill-details">
+							<div className="skill-detail-name">
+								<h2 className="categories">Database</h2>
+							</div>
+							<div className="skill-detail-info">
+								<h3>MySQL</h3>
+								<Progress percent={90} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
+								<h3>PostgreSQL</h3>
+								<Progress percent={90} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
+								<h3>SQLite</h3>
+								<Progress percent={90} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
+								<h3>MongoDB</h3>
+								<Progress percent={90} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
+								<h3>Firebase</h3>
+								<Progress percent={90} strokeWidth={8} strokeColor="rgb(187, 81, 71)"/>
 							</div>
 						</div>
 					</div>
