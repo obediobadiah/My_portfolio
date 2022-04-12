@@ -19,11 +19,8 @@ function Intro() {
 								loop={Infinity}
 								wrapper='b'
 								steps={[
-									' Frontend Web developer💻',
+									' Full Stack Web developer💻',
 									1000,
-									' BackEnd Web developer💻',
-									1000,
-									' UI/UX Web designer💻',
 								]} />
 						</p>
 					</div>
