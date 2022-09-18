@@ -19,7 +19,7 @@ function Projects() {
 								<div className="projects-details">
 									<div className='project_title'>
 										<h2>ACNDC WebSite</h2>
-										<a href="https://acndc.herokuapp.com/"><VisibilityIcon/></a>
+										<a href="https://acndc.org/"><VisibilityIcon/></a>
 									</div>
 									<p>A vitrine website for provided services and events for women rightous</p>
 									<div className='project_skills'>
