@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container-content{
+    display: flex;
+}
+.container-content .container-left{
+    float: 1;
+    width: 70%;
+}
+
+.container-content .container-right{
+    /* position: relative;
+    float: right;
+    width: 50%; */
+    width: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgb(187, 27, 27);
+    background-image: url('images/IMG_9394.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container-content .container-left-content{
+    display: none;
+    background-color: rgb(187, 27, 27);
+    background-image: url('images/IMG_9394.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+@media only screen and (max-width: 992px) {
+    .container-content .container-right{
+        /* position: relative;
+        float: right;
+        width: 50%; */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: rgb(187, 27, 27);
+        background-image: url('images/IMG_9394.png');
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-position: center;
+    }
+
+    .container-content .container-left{
+        width: 100%;
+    }
+
+    .container-content .container-right{
+        display: none;
+    }
+
+    .container-content .container-left-content{
+        display: grid;
+        background-color: rgb(187, 27, 27);
+        background-image: url('images/IMG_9394.png');
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    
+}

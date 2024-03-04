@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 
 body {
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .container-content-skill .skill-title {
@@ -17,7 +17,7 @@ body {
 }
 
 .container-content-skill {
-	background-color: rgb(255, 200, 200);
+	background-color: rgb(255, 235, 235);
 	padding: 5rem 0.5rem 5rem 0.5rem;
 }
 
@@ -25,44 +25,64 @@ body {
 	color: rgb(187, 27, 27);
 	font-size: 2rem;
 	text-align: center;
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
 }
 
 .container-content-skill .skill-boxes {
-	/* width: 100%; */
-	height: auto;
-	padding: 0 1rem 1rem 1rem;
-	display: flex;
-	justify-content: space-between;
-	/* flex-direction: row;
-	flex-wrap: wrap; */
+	padding: 0 10rem 0 10rem ;
 }
 
-.container-content-skill .skill-info {
+/* .container-content-skill .skill-info {
 	width: 100%;
 	margin: 0 1rem 1rem 1rem;
-}
+} */
 
 .skill-detail-name .categories {
-	font-family: 'Kanit', sans-serif;
-	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	/* font-weight: bold; */
 	font-size: 1.3rem;
-	text-decoration: underline;
+	/* text-decoration: underline; */
+	margin-top: 3rem;
+	margin-bottom: 2rem;
 }
 
 .skill-detail-info h3 {
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
-.skill-details {
-	border-left: 1px solid rgb(186, 186, 186);
+.skill-detail-info {
+	/* padding: 0 1rem 1rem 1rem; */
+	/* display: flex; */
+	/* display: flex;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
+	/* gap: 15px; */
+	/* gap: 20px;
+	justify-content: space-between; */
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skill-detail-info .skill_box{
+	padding: 1rem;
+	/* background-color: rgb(255, 235, 235); */
+	width: 100%;
+	border: 1px solid rgb(187, 27, 27);
+	background-color: white;
+	border-radius: 10px;
+	flex: 0 15%;
+	margin: 5px;
+}
+
+/* .skill-details {
+	border-bottom: 1px solid rgb(186, 186, 186);
 	width: 100%;
 	height: 400px;
-	padding: 2rem 2rem 2rem 2rem;
-}
+	margin: 2rem 2rem 2rem 2rem;
+} */
 
 @media only screen and (max-width: 992px) {
 
@@ -74,7 +94,6 @@ body {
 
 
 	.container-content-skill {
-		background-color: rgb(255, 200, 200);
 		padding: 5rem 0 5rem 0;
 	}
 
@@ -84,10 +103,17 @@ body {
 	}
 
 	.skill-details {
-		border-left: 1px solid rgb(186, 186, 186);
 		width: 100%;
-		height: 400px;
-		padding: 1rem 1rem 1rem 1rem;
+		/* height: 0px; */
+		padding: 0 1rem 1rem 1rem;
+	}
+}
+
+
+
+@media only screen and (max-width: 1203px) {
+    .container-content-skill .skill-boxes {
+		padding: 0 1rem 0 1rem;
 	}
 }
 

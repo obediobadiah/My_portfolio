@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 
@@ -47,7 +47,7 @@ body{
 
 .menu-button .button{
 	padding: 0.8rem;
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
 	background-color: rgb(187, 27, 27);
 	border: none;

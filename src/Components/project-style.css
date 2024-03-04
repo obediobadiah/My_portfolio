@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .container-content-projects{
@@ -19,20 +19,20 @@ body{
 	color: rgb(187, 27, 27);
 	padding: 1rem;
 	font-size: 2rem;
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
 	text-align: center;
 } 
 
 .projects-details h2{
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
 	font-size: 1.3rem;
 }
 
 .projects-details button{
 	background-color: rgb(187, 27, 27);
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	padding: 5px;
 	color: white;
 	border: none;
@@ -47,18 +47,30 @@ body{
 	gap: 15px;
 }
 
+.container-content-projects .projects-boxes .project-box{
+	/* padding: 0 3rem 3rem 3rem; */
+	border: 1px solid rgb(112, 112, 112);
+	border-bottom: 5px solid rgb(197, 124, 124);
+	border-radius: 20px;
+	width: 100%;
+}
+
+.projects-boxes:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .projects-boxes .projects-details{
 	padding: 1rem;
-	border: 1px solid rgb(112, 112, 112);
-	border-left: 5px solid rgb(197, 124, 124);
-	border-radius: 5px;
-	width: 100%;
 	/* height: 200px; */
 	margin-top: 1rem;
 }
 
-.projects-boxes .projects-details:hover{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.projects-info .project_img .project_image{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .project_skills ul{
@@ -97,9 +109,13 @@ body{
 }
 
 @media only screen and (max-width: 992px) {
-	.container-content-projects .projects-boxes{
-		height: auto;
-		padding: 0 1rem 1rem 0rem;
+
+	.container-content-projects .projects-boxes {
+		padding: 1rem;
+		display: grid;
+		grid-template-columns: none;
+		gap: 15px;
+		/* padding: 0 1rem 1rem 0rem; */
 	}
 
 	.projects-boxes .projects-details{
