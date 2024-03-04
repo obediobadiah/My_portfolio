@@ -10,6 +10,28 @@ function Experience() {
             <div className='experience_content'>
 
                 <div className='experience_details'>
+                    <h1 className='experience_title'>Education</h1>
+                    <div className='experience_card'>
+                        <div className='experience_card_box experience_date'>
+                            <h5>From  September 2017 To December 2020</h5>
+                            <h1>Bachelor's degree in Computer science</h1>
+                            <p>At Kigali Independant University (ULK)</p>
+                        </div>
+
+                        <div className='experience_card_box experience_projects'>
+                            <p><strong>Project</strong></p>
+                            <ul>
+                                <li>
+                                    <strong>Small Bank Customers Management System:</strong> A desktop system to manage bank customers informations
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div className='experience_details'>
                     <h1 className='experience_title'>Proffesional Experiences</h1>
                     <div className='experience_card'>
                         <div className='experience_card_box experience_date'>
@@ -41,7 +63,7 @@ function Experience() {
                         </div>
 
                         <div className='experience_card_box experience_projects'>
-                            <p><strong>Projects</strong></p>
+                            <p><strong>Project</strong></p>
                             <ul>
                                 <li>
                                     <strong>ACNDCORG:</strong> ACNDC Actuality management Platform
@@ -57,7 +79,7 @@ function Experience() {
                         </div>
 
                         <div className='experience_card_box experience_projects'>
-                            <p><strong>Projects</strong></p>
+                            <p><strong>Project</strong></p>
                             <ul>
                                 <li>
                                     <strong>ZURI CHAT:</strong> Communication workspace app
@@ -74,7 +96,7 @@ function Experience() {
                         </div>
 
                         <div className='experience_card_box experience_projects'>
-                            <p><strong>Projects</strong></p>
+                            <p><strong>Project</strong></p>
                             <ul>
                                 <li>
                                     <strong>Novatech Site:</strong> Training Center Services Display Platform
@@ -84,14 +106,6 @@ function Experience() {
                     </div>
                 </div>
 
-                {/* <div className='educations_details'>
-                    <h1 className='educations_title'>Education</h1>
-                    <div className='education_card'>
-                        <h5>From  September 2017 To December 2020</h5>
-                        <h1>Bachelor's degree in Computer science</h1>
-                        <p>At Kigali Independant University (ULK)</p>
-                    </div>
-                </div> */}
             </div>
 
         </div>

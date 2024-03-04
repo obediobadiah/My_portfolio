@@ -166,7 +166,7 @@
 
 	.container-content-intro {
 		display: grid;
-		gap: 0;
+		gap: 50px;
 		justify-content: center;
 		align-items: center;
 		align-content: center;
@@ -188,7 +188,7 @@
 
 	.container-content-intro {
 		display: flex;
-		gap: 0;
+		gap: 50px;
 		justify-content: center;
 		align-items: center;
 		align-content: center;
