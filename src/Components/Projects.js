@@ -100,7 +100,7 @@ function Projects() {
 								<div className="projects-details">
 									<div className='project_title'>
 										<h2>ReportHub</h2>
-										<a href="https://dev.reporthub.org/"><VisibilityIcon /></a>
+										<a href="https://dev.reporthub.immap.org/"><VisibilityIcon /></a>
 									</div>
 									<p>A platform that provides an easy-to-use system that includes alerts and notifications for a daily reporting workflow,</p>
 									<div className='project_skills'>

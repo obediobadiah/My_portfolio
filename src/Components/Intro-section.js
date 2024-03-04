@@ -1,7 +1,6 @@
 import React from 'react';
 import './Intro-style.css';
 import myimage from './images/IMG_9394.png';
-import Typical from 'react-typical'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -19,15 +18,7 @@ function Intro() {
 						<p className='intro-hello'>Hello, <strong>I AM</strong></p>
 						<h1 className='intro_name'>Obedi Obadiah</h1>
 						<div className="intro-about-text">
-							<p> I'm a
-								<Typical
-									loop={Infinity}
-									wrapper='b'
-									steps={[
-										' Full Stack Web developer💻',
-										1000,
-									]} />
-								who enjoys solving problems and building products. I have worked with many companies where I was able to add values to the organization through my expertise and skills.
+							<p> I'm a <strong>Full Stack Web developer💻 </strong> who enjoys solving problems and building products. I have worked with many companies where I was able to add values to the organization through my expertise and skills.
 							</p>
 						</div>
 
