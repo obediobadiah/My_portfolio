@@ -37,6 +37,7 @@ function Projects() {
 											<li>ReactJS</li>
 											<li>Boostrap</li>
 											<li>MaterialUI</li>
+											<li>DjangoREST</li>
 										</ul>
 									</div>
 								</div>
@@ -60,6 +61,7 @@ function Projects() {
 										<ul>
 											<li>ReactJS</li>
 											<li>Boostrap</li>
+											<li>PostgreSQL</li>
 											<li>NodeJS</li>
 										</ul>
 									</div>
@@ -105,8 +107,9 @@ function Projects() {
 									<p>A platform that provides an easy-to-use system that includes alerts and notifications for a daily reporting workflow,</p>
 									<div className='project_skills'>
 										<ul>
-											<li>Django</li>
+											<li>DjangoREST</li>
 											<li>MaterialUI</li>
+											<li>PostgreSQL</li>
 										</ul>
 									</div>
 								</div>
@@ -130,6 +133,8 @@ function Projects() {
 										<ul>
 											<li>ReactJS</li>
 											<li>Boostrap</li>
+											<li>Laravel</li>
+											<li>NextJS</li>
 											<li>MaterialUI</li>
 										</ul>
 									</div>
@@ -152,9 +157,8 @@ function Projects() {
 									<p>A desktop system to manage bank customers informations</p>
 									<div className='project_skills'>
 										<ul>
-											<li>ReactJS</li>
-											<li>Laravel</li>
-											<li>Boostrap</li>
+											<li>C# .Net</li>
+											<li>SQLServer</li>
 										</ul>
 									</div>
 								</div>
@@ -177,9 +181,8 @@ function Projects() {
 									<div className='project_skills'>
 										<ul>
 											<li>ReactJS</li>
-											<li>Node RestAPI</li>
+											<li>NodeJS</li>
 											<li>MaterialUI</li>
-											<li>Boostrap</li>
 										</ul>
 									</div>
 								</div>
