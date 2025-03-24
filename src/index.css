@@ -1,3 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-primaryLight text-textBaseLight font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-textDark font-semibold;
+  }
+
+  ::selection {
+    @apply bg-secondaryDark/20 text-secondaryDark;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-2xl md:text-3xl mb-8 font-mono text-textDark relative 
+      before:absolute before:left-0 before:bottom-0 before:h-[1px] before:w-16 
+      before:bg-secondaryDark after:absolute after:left-0 after:bottom-0 
+      after:h-[1px] after:w-32 after:bg-secondaryDark/30;
+  }
+  
+  .nav-link {
+    @apply text-textBaseLight hover:text-secondaryDark transition-colors duration-300;
+  }
+  
+  .button-primary {
+    @apply inline-block px-6 py-3 border border-secondaryDark 
+      text-secondaryDark hover:bg-secondaryDark/10 transition-colors duration-300
+      font-mono text-sm rounded;
+  }
+  
+  .card {
+    @apply bg-accentLight p-6 rounded-md shadow-cardLight hover:translate-y-[-5px] 
+      transition-all duration-300;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
