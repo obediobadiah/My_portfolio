@@ -32,7 +32,7 @@ const Footer = () => {
             </a>
             <span className="text-secondaryDark">•</span>
             <a 
-              href="/fullstack" 
+              href="/" 
               className="text-secondaryDark bg-white hover:bg-secondaryDark hover:text-white px-3 py-1 rounded-md text-sm font-medium border border-secondaryDark transition-colors duration-300"
             >
               Switch to Fullstack

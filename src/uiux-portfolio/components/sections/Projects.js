@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faBehance, faDribbble } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt, faPalette, faPencilRuler } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faPalette, faPencilRuler, faChevronRight, faFilter, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   // Import required images
@@ -23,6 +23,17 @@ const Projects = () => {
   const novatechImg = require('../images/Novatech.png');
   const smallBankImg = require('../images/Small Bank.PNG');
 
+  // State for category filtering
+  const [activeFilter, setActiveFilter] = useState('All');
+
+  const categories = [
+    'All',
+    'Mobile',
+    'Web',
+    'Dashboard',
+    'E-commerce'
+  ];
+
   const featuredProjects = [
     {
       title: 'Travel App',
@@ -30,7 +41,9 @@ const Projects = () => {
       image: TravelApp,
       technologies: ['Mobile UI', 'Travel Planning', 'Map Interfaces', 'Itinerary Design', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223776431/Travel-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Mobile',
+      featured: true
     },
     {
       title: 'Docter Consultant Mobile App',
@@ -38,7 +51,9 @@ const Projects = () => {
       image: DocterConsultant,
       technologies: ['Healthcare UI', 'Telehealth', 'Appointment Scheduling', 'Patient Experience', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223776331/Docter-Consultant-Mobile-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Mobile',
+      featured: false
     },
     {
       title: 'Taxi App',
@@ -46,7 +61,9 @@ const Projects = () => {
       image: TaxiApp,
       technologies: ['Mobile UI', 'Maps Integration', 'Location Services', 'Payment Flow', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223775559/Taxi-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Mobile',
+      featured: true
     },
     {
       title: 'Sound Effect App',
@@ -54,7 +71,9 @@ const Projects = () => {
       image: SoundEffectApp,
       technologies: ['Audio UI', 'Interaction Design', 'Visual Hierarchy', 'User Testing', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223775351/Sound-Effect-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Mobile',
+      featured: false
     },
     {
       title: 'Xbox Game App',
@@ -62,7 +81,9 @@ const Projects = () => {
       image: XboxGameApp,
       technologies: ['Gaming UI', 'Entertainment Design', 'Social Features', 'Remote Controls', 'Adobe XD'],
       behanceUrl: 'https://www.behance.net/gallery/223775275/Xbox-Game-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Mobile',
+      featured: false
     },
     {
       title: 'Skin Care Website',
@@ -70,7 +91,9 @@ const Projects = () => {
       image: SkinCareWebsite,
       technologies: ['E-commerce Design', 'Product Showcase', 'Beauty UI', 'Brand Identity', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223775167/Skin-Care-Website',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'E-commerce',
+      featured: true
     },
     {
       title: 'Cryptocurrency Application',
@@ -78,7 +101,9 @@ const Projects = () => {
       image: Cryptocurrency,
       technologies: ['Financial UI', 'Data Visualization', 'Real-time Updates', 'Security Features', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223775015/Cryptocurrency-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Dashboard',
+      featured: false
     },
     {
       title: 'E-Commerce Web Application',
@@ -86,7 +111,9 @@ const Projects = () => {
       image: ecommerce,
       technologies: ['User Research', 'Wireframing', 'UI Design', 'Usability Testing', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223772121/E-commerce-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'E-commerce',
+      featured: false
     },
     {
       title: 'Burogu Blog App',
@@ -94,7 +121,9 @@ const Projects = () => {
       image: burogu,
       technologies: ['Content Strategy', 'Typography', 'Responsive Design', 'Information Architecture', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223772865/BUROGU-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Web',
+      featured: false
     },
     {
       title: 'Construction Web Site',
@@ -102,7 +131,9 @@ const Projects = () => {
       image: Construction,
       technologies: ['Web Design', 'Brand Integration', 'Portfolio Layout', 'Lead Generation', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223773419/Construction-Web-App',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Web',
+      featured: false
     },
     {
       title: 'Humanitarian Spatial Data Center',
@@ -110,7 +141,9 @@ const Projects = () => {
       image: hsdcImg,
       technologies: ['Information Architecture', 'Data Visualization', 'Dashboard Design', 'Adobe XD'],
       behanceUrl: 'https://www.behance.net/gallery/223771349/Humanitarian-Spatial-Data-Center',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Dashboard',
+      featured: true
     },
     {
       title: 'ReportHub Platform',
@@ -118,7 +151,9 @@ const Projects = () => {
       image: reportHubV1Img,
       technologies: ['Dashboard Design', 'Form Design', 'Data Visualization', 'User Flows', 'Sketch'],
       behanceUrl: 'https://www.behance.net/gallery/223765543/ReportHub-Platform-Design',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Dashboard',
+      featured: false
     },
     {
       title: 'Zuri Chat',
@@ -126,7 +161,9 @@ const Projects = () => {
       image: zuriImg,
       technologies: ['UI Design', 'UX Design', 'Design System', 'Prototyping', 'Figma'],
       behanceUrl: 'https://www.behance.net/gallery/223770819/Zuri-Chat',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Web',
+      featured: true
     },
     {
       title: 'Novatech E-Learning Platform',
@@ -134,7 +171,9 @@ const Projects = () => {
       image: novatechImg,
       technologies: ['UX Research', 'E-Learning Design', 'Interaction Design', 'Adobe XD'],
       behanceUrl: 'https://www.behance.net/gallery/223769989/Novatech-Company-Website',
-      liveUrl: '#'
+      liveUrl: '#',
+      category: 'Web',
+      featured: false
     },
     {
       title: 'ACNDC Organization Platform',
@@ -142,14 +181,16 @@ const Projects = () => {
       image: acndcImg,
       technologies: ['Web Design', 'Visual Design', 'Responsive Design', 'User Research', 'Figma'],
       behanceUrl: '#',
-      liveUrl: 'https://acndc.org'
+      liveUrl: 'https://acndc.org',
+      category: 'Web',
+      featured: false
     },
   ];
 
   // Animation variants
-  const container = {
+  const containerVariants = {
     hidden: { opacity: 0 },
-    show: {
+    visible: {
       opacity: 1,
       transition: {
         staggerChildren: 0.1
@@ -157,109 +198,136 @@ const Projects = () => {
     }
   };
 
-  const item = {
+  const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
   };
+
+  const filteredProjects = activeFilter === 'All' 
+    ? featuredProjects 
+    : featuredProjects.filter(project => project.category === activeFilter);
 
   return (
     <section id="projects" className="py-20 bg-gray-50">
-      <div className="max-w-7xl container mx-auto px-4 md:px-8">
-        <motion.h2 
-          className="section-heading mb-12"
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
+          className="mb-12"
         >
-          <span className="text-secondaryDark font-mono">03.</span> Projects
-        </motion.h2>
-        
-        {/* Featured Projects - Grid */}
-        <div className="mb-20">
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            {featuredProjects.map((project, idx) => (
-              <motion.div
-                key={idx}
-                variants={item}
-                className="group hover:shadow-lg transition-shadow duration-300"
+          <h2 className="section-heading mb-6">
+            <span className="text-secondaryDark font-mono">03.</span> Projects
+          </h2>
+          <p className="text-textBaseLight max-w-2xl mb-8">
+            A selection of my recent design work across mobile applications, web platforms, 
+            and interactive dashboards. Each project represents a unique challenge and solution.
+          </p>
+
+          {/* Filter Tabs */}
+          <div className="flex flex-wrap items-center gap-3 mb-12">
+            <div className="flex items-center text-textBaseLight mr-2">
+              <FontAwesomeIcon icon={faFilter} className="mr-2 text-secondaryDark" />
+              <span className="text-sm font-medium">Filter:</span>
+            </div>
+            {categories.map(category => (
+              <button
+                key={category}
+                onClick={() => setActiveFilter(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeFilter === category
+                    ? 'bg-secondaryDark text-white shadow-md'
+                    : 'bg-white text-textBaseLight hover:bg-gray-100 border border-gray-200'
+                }`}
               >
-                <div className="relative overflow-hidden rounded-t-lg h-48 md:h-56">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 group-hover:bg-opacity-50 transition-all duration-300"></div>
+                {category}
+              </button>
+            ))}
+          </div>
+        </motion.div>
+        
+        {/* All Projects Grid */}
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {filteredProjects.map((project, idx) => (
+            <motion.div
+              key={`grid-${idx}`}
+              variants={itemVariants}
+              className="group bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-lg transition-all duration-300 flex flex-col h-[420px]"
+            >
+              <div className="relative h-48 w-full overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="flex gap-3">
+                    {project.behanceUrl && project.behanceUrl !== '#' && (
+                      <a 
+                        href={project.behanceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center text-secondaryDark hover:bg-secondaryDark hover:text-white transition-all duration-300"
+                      >
+                        <FontAwesomeIcon icon={faBehance} />
+                      </a>
+                    )}
+                    {project.liveUrl && project.liveUrl !== '#' && (
+                      <a 
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-9 h-9 rounded-full bg-white/90 flex items-center justify-center text-secondaryDark hover:bg-secondaryDark hover:text-white transition-all duration-300"
+                      >
+                        <FontAwesomeIcon icon={faExternalLinkAlt} />
+                      </a>
+                    )}
+                  </div>
                 </div>
                 
-                <div className="bg-white p-6 border-t-0 border border-gray-100 rounded-b-lg shadow-md">
-                  <div className="flex justify-between items-start mb-3">
-                    <h4 className="text-lg font-bold text-textDark group-hover:text-secondaryDark transition-colors duration-300">
-                      {project.title}
-                    </h4>
-                    <div className="flex space-x-3">
-                      {project.dribbleUrl && project.dribbleUrl !== '#' && (
-                        <a 
-                          href={project.dribbleUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-textBaseLight hover:text-secondaryDark transition-colors duration-300"
-                          aria-label="Dribbble"
-                        >
-                          <FontAwesomeIcon icon={faDribbble} className="text-lg" />
-                        </a>
-                      )}
-                      {project.behanceUrl && project.behanceUrl !== '#' && (
-                        <a 
-                          href={project.behanceUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-textBaseLight hover:text-secondaryDark transition-colors duration-300"
-                          aria-label="Behance"
-                        >
-                          <FontAwesomeIcon icon={faBehance} className="text-lg" />
-                        </a>
-                      )}
-                      {project.liveUrl && project.liveUrl !== '#' && (
-                        <a 
-                          href={project.liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-textBaseLight hover:text-secondaryDark transition-colors duration-300"
-                          aria-label="Live Project"
-                        >
-                          <FontAwesomeIcon icon={faExternalLinkAlt} className="text-lg" />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                  <p className="text-sm text-textBaseLight mb-4">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, idx) => (
-                      <span 
-                        key={idx}
-                        className="text-xs inline-flex items-center gap-1 bg-gray-100 text-textBaseLight px-2 py-1 rounded-full"
-                      >
-                        <FontAwesomeIcon icon={idx % 2 === 0 ? faPalette : faPencilRuler} className="text-secondaryDark/70 text-xs" />
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                {/* Category Tag */}
+                <div className="absolute top-3 left-3">
+                  <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-white/90 text-secondaryDark">
+                    {project.category}
+                  </span>
                 </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-
+              </div>
+              
+              <div className="p-5 flex flex-col flex-grow">
+                <h4 className="text-lg font-bold text-textDark mb-2 group-hover:text-secondaryDark transition-colors duration-300">
+                  {project.title}
+                </h4>
+                
+                <p className="text-sm text-textBaseLight mb-4 line-clamp-3">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-1.5 mt-auto">
+                  {project.technologies.slice(0, 3).map((tech, techIdx) => (
+                    <span 
+                      key={techIdx}
+                      className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-textBaseLight"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                  {project.technologies.length > 3 && (
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-textBaseLight">
+                      +{project.technologies.length - 3} more
+                    </span>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
