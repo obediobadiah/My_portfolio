@@ -12,28 +12,28 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-textBaseLight text-sm mb-4 md:mb-0">
+          <p className="text-textBaseLight text-sm mb-4 md:mb-0 text-center md:text-left">
             &copy; {new Date().getFullYear()} Obedi Obadiah. All Rights Reserved.
           </p>
           
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4">
             <a 
               href="#hero" 
               className="text-textBaseLight hover:text-secondaryDark transition-colors duration-300 text-sm"
             >
               Back to Top
             </a>
-            <span className="text-secondaryDark">•</span>
+            <span className="text-secondaryDark hidden sm:inline">•</span>
             <a 
               href="mailto:obediobadiah05@gmail.com" 
               className="text-textBaseLight hover:text-secondaryDark transition-colors duration-300 text-sm"
             >
               obediobadiah05@gmail.com
             </a>
-            <span className="text-secondaryDark">•</span>
+            <span className="text-secondaryDark hidden sm:inline">•</span>
             <a 
               href="/" 
-              className="text-secondaryDark bg-white hover:bg-secondaryDark hover:text-white px-3 py-1 rounded-md text-sm font-medium border border-secondaryDark transition-colors duration-300"
+              className="text-secondaryDark bg-white hover:bg-secondaryDark hover:text-white px-3 py-1 rounded-md text-sm font-medium border border-secondaryDark transition-colors duration-300 mt-2 sm:mt-0"
             >
               Switch to Fullstack
             </a>
