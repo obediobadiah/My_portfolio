@@ -13,8 +13,26 @@ const Projects = () => {
   const zuriImg = require('../images/zuri.png');
   const novatechImg = require('../images/Novatech.png');
   const smallBankImg = require('../images/Small Bank.PNG');
+  const boostflow = require('../images/boostflow.png');
+  const tevaguard = require('../images/tevaguard.png');
 
   const featuredProjects = [
+    {
+      title: 'Tevaguard Platform',
+      description: 'An open-source ecosystem monitoring and protection platform. Its goal is to visualize, track, and protect ecosystems through open environmental data, real-time alerts, and community reporting, all powered by free technologies and data sources.',
+      image: tevaguard,
+      technologies: ['Python', 'FastAPI', 'PostgreSQL', 'Leaflet', 'MapBox', 'OpenStreetMap', 'CI/CD'],
+      githubUrl: 'https://github.com/iMMAP/tevaguard',
+      liveUrl: '#'
+    },
+    {
+      title: 'BoostFlow App',
+      description: 'An all-in-one platform that empowers businesses to effortlessly promote their products, automate social media posting, and track commissions in real time.',
+      image: boostflow,
+      technologies: ['React', 'TypeScript', 'NodeJS', 'PostgreSQL', 'ClickHouse', 'Socket.IO', 'CI/CD', 'Docker'],
+      githubUrl: 'https://github.com/iMMAP/boostflow-front',
+      liveUrl: 'https://boostflow.vercel.app/'
+    },
     {
       title: 'iMMAP Careers',
       description: 'A Human Resources platform designed to streamline recruitment processes and talent management for humanitarian organizations. Built with a modern tech stack for optimal performance and user experience.',

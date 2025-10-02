@@ -8,6 +8,29 @@ const Experience = ({ isEmbedded = false }) => {
   
   const experiences = [
     {
+      company: 'Freelancer',
+      position: 'Fullstack Software Engineer',
+      period: 'February 2025 - Present',
+      location: 'Goma, North-Kivu, Democratic Republic Of Congo',
+      responsibilities: [
+        'Building full‑stack web apps with Python, Node.js, React/Next.js and TypeScript',
+        'Designing microservices and real‑time features with Kafka/RabbitMQ and Socket.IO',
+        'Owning end‑to‑end delivery: APIs, auth, databases, CI/CD, and deployments',
+      ],
+      skills: 'Python · Flask · Django · FastAPI · Node.js · ReactJS · Next.js · TypeScript · Microservices · REST · GraphQL · Kafka · RabbitMQ · MongoDB · PostgreSQL · ClickHouse · Socket.IO · CI/CD · Docker',
+      projects: [
+        {
+          name: 'Boostflow App',
+          description: 'An all-in-one platform that empowers businesses to effortlessly promote their products.'
+        },
+        {
+          name: 'Tevaguard',
+          description: 'An open-source ecosystem monitoring and protection platform.'
+        }
+      ],
+      url: '#'
+    },
+    {
       company: 'iMMAP Inc.',
       position: 'FullStack Software Developer',
       period: 'April 2022 - February 2025 · 2 yrs 11 mos',

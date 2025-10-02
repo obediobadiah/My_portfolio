@@ -120,18 +120,6 @@ const Navbar = () => {
                 </Link>
               </motion.div>
             ))}
-            
-            <motion.a
-              href="/Obedi_Obadiah_CV_Software_Developer_.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-primary"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: navLinks.length * 0.1 + 0.5 }}
-            >
-              Resume
-            </motion.a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -185,15 +173,6 @@ const Navbar = () => {
                     {link.name}
                   </Link>
                 ))}
-                <a 
-                  href="/Obedi_Obadiah_CV_Software_Developer_.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="button-primary mt-4 w-full text-left"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Resume
-                </a>
               </nav>
             </div>
           </motion.div>
